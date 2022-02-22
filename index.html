@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .lbl {
+        display: block;
+        height: 20px;
+        color: rgb(70, 69, 69);
+    }
+    .block {
+        /* height: 50px; */
+        margin: auto;
+        width: 100%;
+    }
+    .winner, .win-val, .attempt{
+        height: 20px;
+        font-size: 20px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .title {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .form {
+        width: 400px;
+        margin: auto;
+    }
+    .form input {
+        width: 100%;
+        display: block;
+        height: 40px;
+        margin: auto;
+        border: 1px solid;
+        border-radius: 5px;
+        outline: none;
+        padding-left: 20px;
+    }
+    #btn {
+        text-transform: uppercase;
+        margin-top: 20px;
+        display: block;
+        font-size: 20px;
+        background-color: rgb(54, 75, 167);
+        color: white;
+        transition: all 0.2s linear;
+        cursor: pointer;
+    }
+    #btn:hover {
+        color: #000;
+        background-color: rgba(54, 75, 167, 0.192);
+        border: 2px solid rgb(54, 75, 167);
+    }
+    .box {
+        display: flex;
+        justify-content: space-around;
+    }
+</style>
+
+    <form class="form" action="">
+        <h1 class="title" id="title">Game with numbers</h1>
+        <div class="box">
+            <div class="winner"></div>
+            <div class="win-val">val: <span id="inner-val">0</span></div>
+            <div class="attempt">win: <span id="inner-attempt">0</span></div>
+        </div>
+
+        <div class="block">
+            <label for="min-number" class="lbl" id="lab-min"></label>
+            <input type="text" id="min-number" placeholder="min">
+        </div>
+        <div class="block">
+            <label for="min-number" class="lbl" id="lab-max"></label>
+            <input type="text" id="max-number" placeholder="max">
+        </div>
+        <div class="block">
+            <label for="min-number" class="lbl" id="lab-nbr"></label>
+            <input type="text" id="number" placeholder="you number">
+        </div>
+        <input type="submit" id="btn" value="click">
+    </form>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
